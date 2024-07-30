@@ -1,0 +1,5 @@
+Screen Name,Assigned Output,Resolution Width,Resolution Height,Offset X,Offset Y,SubScreen
+First Screen,Output A,2016,1134,0,0,n/a
+Second Screen,n/a,2016,1134,n/a,n/a,n/a
+Second Screen,Output A,1008,1134,2016,0,1
+Second Screen,Output B,1008,1134,0,0,2

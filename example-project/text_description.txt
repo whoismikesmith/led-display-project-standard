@@ -1,0 +1,31 @@
+Project: My LED Project
+
+All Screens:
+  - Screen Name: First Screen
+    Resolution: 2016 x 1134
+    Offset: x=0, y=0
+    SubScreens: n/a
+
+  - Screen Name: Second Screen
+    Resolution: 2016 x 1134
+    Offset: n/a
+    SubScreens: 2
+
+Outputs and Assigned Screens/SubScreens:
+Output Name: Output A
+Resolution: 3840 x 2160
+Screens:
+  - Screen Name: First Screen
+    Resolution: 2016 x 1134
+    Offset: x=0, y=0
+  - SubScreen Name: Second Screen - SubScreen 1
+    Resolution: 1008 x 1134
+    Offset: x=2016, y=0
+
+Output Name: Output B
+Resolution: 3840 x 2160
+Screens:
+  - SubScreen Name: Second Screen - SubScreen 2
+    Resolution: 1008 x 1134
+    Offset: x=0, y=0
+

@@ -1,0 +1,200 @@
+{
+  "projectName": "My LED Project",
+  "screens": [
+    {
+      "name": "First Screen",
+      "mapWidth": 16,
+      "mapHeight": 9,
+      "panelWidth": 126,
+      "panelHeight": 126,
+      "panelManufacturer": "Custom",
+      "panelName": "Custom",
+      "panelWidthInMm": 500,
+      "panelHeightInMm": 500,
+      "panelWeightInKg": 20,
+      "panelWattage": 190,
+      "offsetX": 0,
+      "offsetY": 0,
+      "assignedOutput": "lz8ga3gw2m457smv9jb",
+      "panelyType": null,
+      "colors": [
+        "#C95B54",
+        "#428BCA",
+        "#FFD97D",
+        "#60D394"
+      ],
+      "opacity": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rgbacolors": [],
+      "borders": {
+        "panel": {
+          "color": "#FFFFFF",
+          "width": 1
+        },
+        "screen": {
+          "color": "#FFFFFF",
+          "width": 1
+        }
+      },
+      "dataFlow": 4,
+      "powerFlow": 0,
+      "coordinateStyle": 0,
+      "dataColor": "#000000",
+      "showCoordinates": true,
+      "showPanelBorder": true,
+      "showScreenBorder": false,
+      "showDataFlow": true,
+      "showEveryOtherPixel": false,
+      "showScalingCard": false,
+      "showScreenName": false,
+      "showScreenSpecs": false,
+      "portSize": 300000,
+      "portStart": 1,
+      "showLogo": false,
+      "logoData": null,
+      "logoOffsetX": 0,
+      "logoOffsetY": 0,
+      "coloringMode": "default",
+      "panelLibraryId": null,
+      "halfRow": null,
+      "rectangularPorts": false,
+      "portWidthLimit": 2,
+      "portHeightLimit": 2,
+      "processorType": "Brompton SX40",
+      "processorFrameRate": 60,
+      "processorBitDepth": 8,
+      "processorDatarate": 1,
+      "subScreens": [],
+      "splitHistory": {},
+      "splitDirection": null,
+      "splitPosition": null,
+      "id": "lz8ga3gwt61hygiv68"
+    },
+    {
+      "name": "Second Screen",
+      "mapWidth": 16,
+      "mapHeight": 9,
+      "panelWidth": 126,
+      "panelHeight": 126,
+      "panelManufacturer": "Custom",
+      "panelName": "Custom",
+      "panelWidthInMm": 500,
+      "panelHeightInMm": 500,
+      "panelWeightInKg": 20,
+      "panelWattage": 190,
+      "offsetX": 2016,
+      "offsetY": 0,
+      "assignedOutput": "lz8ga3gw2m457smv9jb",
+      "panelyType": null,
+      "colors": [
+        "#aabb68",
+        "#68c49c",
+        "#FFD97D",
+        "#60D394"
+      ],
+      "opacity": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "rgbacolors": [],
+      "borders": {
+        "panel": {
+          "color": "#FFFFFF",
+          "width": 1
+        },
+        "screen": {
+          "color": "#FFFFFF",
+          "width": 1
+        }
+      },
+      "dataFlow": 4,
+      "powerFlow": 0,
+      "coordinateStyle": 0,
+      "dataColor": "#000000",
+      "showCoordinates": true,
+      "showPanelBorder": true,
+      "showScreenBorder": false,
+      "showDataFlow": true,
+      "showEveryOtherPixel": false,
+      "showScalingCard": false,
+      "showScreenName": false,
+      "showScreenSpecs": false,
+      "portSize": 300000,
+      "portStart": 1,
+      "showLogo": false,
+      "logoData": null,
+      "logoOffsetX": 0,
+      "logoOffsetY": 0,
+      "coloringMode": "default",
+      "panelLibraryId": null,
+      "halfRow": null,
+      "rectangularPorts": false,
+      "portWidthLimit": 2,
+      "portHeightLimit": 2,
+      "processorType": "Brompton SX40",
+      "processorFrameRate": 60,
+      "processorBitDepth": 8,
+      "processorDatarate": 1,
+      "subScreens": [
+        {
+          "id": "lz8gcn8l9l46d0f5in",
+          "parentId": "lz8gbboazxq1zpy6zy",
+          "direction": "vertical",
+          "position": 1008,
+          "offsetX": 2016,
+          "offsetY": 0,
+          "assignedOutput": "lz8ga3gw2m457smv9jb",
+          "width": 1008,
+          "height": 1134,
+          "sourceX": 0,
+          "sourceY": 0,
+          "latest": false,
+          "number": 1
+        },
+        {
+          "id": "lz8gcn8l61c7icuvt5f",
+          "parentId": "lz8gbboazxq1zpy6zy",
+          "direction": "vertical",
+          "position": 1008,
+          "offsetX": 0,
+          "offsetY": 0,
+          "assignedOutput": "lz8gcqh6e7jud51raio",
+          "width": 1008,
+          "height": 1134,
+          "sourceX": 1008,
+          "sourceY": 0,
+          "latest": true,
+          "number": 2
+        }
+      ],
+      "splitHistory": {},
+      "splitDirection": null,
+      "splitPosition": null,
+      "id": "lz8gbboazxq1zpy6zy"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "lz8ga3gw2m457smv9jb",
+      "width": 3840,
+      "height": 2160,
+      "color": "#000000",
+      "name": "Output A"
+    },
+    {
+      "id": "lz8gcqh6e7jud51raio",
+      "width": 3840,
+      "height": 2160,
+      "color": "#000000",
+      "name": "Output B"
+    }
+  ],
+  "activeScreenId": "lz8gbboazxq1zpy6zy",
+  "activeOutputId": "lz8ga3gw2m457smv9jb"
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "projectName": {
+      "type": "string"
+    },
+    "screens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "mapWidth": { "type": "integer" },
+          "mapHeight": { "type": "integer" },
+          "panelWidth": { "type": "integer" },
+          "panelHeight": { "type": "integer" },
+          "panelManufacturer": { "type": "string" },
+          "panelName": { "type": "string" },
+          "panelWidthInMm": { "type": "integer" },
+          "panelHeightInMm": { "type": "integer" },
+          "panelWeightInKg": { "type": "number" },
+          "panelWattage": { "type": "integer" },
+          "offsetX": { "type": "integer" },
+          "offsetY": { "type": "integer" },
+          "assignedOutput": { "type": "string" },
+          "panelyType": { "type": ["string", "null"] },
+          "colors": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "opacity": {
+            "type": "array",
+            "items": { "type": "number" }
+          },
+          "rgbacolors": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "borders": {
+            "type": "object",
+            "properties": {
+              "panel": {
+                "type": "object",
+                "properties": {
+                  "color": { "type": "string" },
+                  "width": { "type": "integer" }
+                }
+              },
+              "screen": {
+                "type": "object",
+                "properties": {
+                  "color": { "type": "string" },
+                  "width": { "type": "integer" }
+                }
+              }
+            }
+          },
+          "dataFlow": { "type": "integer" },
+          "powerFlow": { "type": "integer" },
+          "coordinateStyle": { "type": "integer" },
+          "dataColor": { "type": "string" },
+          "showCoordinates": { "type": "boolean" },
+          "showPanelBorder": { "type": "boolean" },
+          "showScreenBorder": { "type": "boolean" },
+          "showDataFlow": { "type": "boolean" },
+          "showEveryOtherPixel": { "type": "boolean" },
+          "showScalingCard": { "type": "boolean" },
+          "showScreenName": { "type": "boolean" },
+          "showScreenSpecs": { "type": "boolean" },
+          "portSize": { "type": "integer" },
+          "portStart": { "type": "integer" },
+          "showLogo": { "type": "boolean" },
+          "logoData": { "type": ["string", "null"] },
+          "logoOffsetX": { "type": "integer" },
+          "logoOffsetY": { "type": "integer" },
+          "coloringMode": { "type": "string" },
+          "panelLibraryId": { "type": ["string", "null"] },
+          "halfRow": { "type": ["integer", "null"] },
+          "rectangularPorts": { "type": "boolean" },
+          "portWidthLimit": { "type": "integer" },
+          "portHeightLimit": { "type": "integer" },
+          "processorType": { "type": "string" },
+          "processorFrameRate": { "type": "integer" },
+          "processorBitDepth": { "type": "integer" },
+          "processorDatarate": { "type": "integer" },
+          "subScreens": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "parentId": { "type": "string" },
+                "direction": { "type": "string" },
+                "position": { "type": "integer" },
+                "offsetX": { "type": "integer" },
+                "offsetY": { "type": "integer" },
+                "assignedOutput": { "type": "string" },
+                "width": { "type": "integer" },
+                "height": { "type": "integer" },
+                "sourceX": { "type": "integer" },
+                "sourceY": { "type": "integer" },
+                "latest": { "type": "boolean" },
+                "number": { "type": "integer" }
+              },
+              "required": ["id", "parentId", "direction", "position", "offsetX", "offsetY", "assignedOutput", "width", "height", "sourceX", "sourceY", "latest", "number"]
+            }
+          },
+          "splitHistory": {
+            "type": "object"
+          },
+          "splitDirection": { "type": ["string", "null"] },
+          "splitPosition": { "type": ["integer", "null"] },
+          "id": { "type": "string" }
+        },
+        "required": ["name", "mapWidth", "mapHeight", "panelWidth", "panelHeight", "panelManufacturer", "panelName", "panelWidthInMm", "panelHeightInMm", "panelWeightInKg", "panelWattage", "offsetX", "offsetY", "assignedOutput", "colors", "opacity", "borders", "dataFlow", "powerFlow", "coordinateStyle", "dataColor", "showCoordinates", "showPanelBorder", "showScreenBorder", "showDataFlow", "showEveryOtherPixel", "showScalingCard", "showScreenName", "showScreenSpecs", "portSize", "portStart", "showLogo", "logoOffsetX", "logoOffsetY", "coloringMode", "rectangularPorts", "portWidthLimit", "portHeightLimit", "processorType", "processorFrameRate", "processorBitDepth", "processorDatarate", "subScreens", "id"]
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "width": { "type": "integer" },
+          "height": { "type": "integer" },
+          "color": { "type": "string" },
+          "name": { "type": "string" }
+        },
+        "required": ["id", "width", "height", "color", "name"]
+      }
+    },
+    "activeScreenId": { "type": "string" },
+    "activeOutputId": { "type": "string" }
+  },
+  "required": ["projectName", "screens", "outputs", "activeScreenId", "activeOutputId"]
+}
